@@ -636,7 +636,7 @@ export function* renderValue(
         yield* renderLightResult;
       }
     }
-    value = null;
+    return
   } else {
     value = resolveDirective(
       connectedDisconnectable({type: PartType.CHILD}) as ChildPart,
